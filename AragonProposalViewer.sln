@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33927.249
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AragonProposalViewer", "AragonProposalViewer.csproj", "{D7A3A8AB-7370-4777-9B1C-58CF0DCAB135}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7A3A8AB-7370-4777-9B1C-58CF0DCAB135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7A3A8AB-7370-4777-9B1C-58CF0DCAB135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7A3A8AB-7370-4777-9B1C-58CF0DCAB135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7A3A8AB-7370-4777-9B1C-58CF0DCAB135}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7164D22-8B22-4663-A1CA-BD054BDF9075}
+	EndGlobalSection
+EndGlobal

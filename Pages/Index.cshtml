@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Aragon Proposals Viewer";
+}
+<h2>Recent proposals</h2>
+<div>
+    @foreach (var prop in Model.Proposals)
+    {
+        <div class="card text-dark bg-light mb-3 border-primary">
+            <div class="card-body">
+                <p class="card-title"><label>Title:</label> @prop.title</p>
+                <p class="card-text"><label>Summary:</label> @prop.summary</p>
+                <p class="card-text"><label>Status:</label> @prop.status.ToString() <label>Created on:</label> @prop.createdAt.ToString("dd MMM yyyy")</p>
+            </div>
+        </div>
+    }
+</div>
