@@ -73,20 +73,22 @@ namespace AragonProposalViewer.Pages
         private double Convert(string cryptoInt)
         {
             double d = 0;
-            foreach (var c in cryptoInt)
+            if(!string.IsNullOrEmpty(cryptoInt))
             {
-                if (char.IsDigit(c))
+                foreach (var c in cryptoInt)
                 {
-                    d += c - '0';
-                    d *= 10;
+                    if (char.IsDigit(c))
+                    {
+                        d += c - '0';
+                        d *= 10;
+                    }
+                    else
+                    {
+                        throw new Exception($"Invalid character: {c}");
+                    }
                 }
-                else
-                {
-                    throw new Exception($"Invalid character: {c}");
-                }
-
+                d /= (10 ^ 19);
             }
-            d /= (10 ^ 19);
             return d;
         }
 
