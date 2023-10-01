@@ -67,6 +67,7 @@ namespace AragonProposalViewer.Pages
         {
             if (prop.open) return ProposalView.Status.open;
             if (prop.executed) return ProposalView.Status.executed;
+            if(string.IsNullOrEmpty(prop.castedVotingPower)) return ProposalView.Status.pending;
             if (Convert(prop.castedVotingPower) < Convert(prop.minVotingPower) || Convert(prop.yes) < Convert(prop.supportThreshold) || Convert(prop.yes) < Convert(prop.no)) return ProposalView.Status.failed;
             return ProposalView.Status.succeeded;
         }
